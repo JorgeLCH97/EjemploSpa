@@ -1,0 +1,347 @@
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+        font-size: 62.5%;
+
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body {
+    
+}
+/** GLOBALES **/
+img {
+   width: 100%;
+}
+h1 {
+    font-size:2.8rem;
+}
+h2 {
+    font-size:2.4rem;
+}
+h3 {
+    font-size:2rem;
+}
+h4 {
+    font-size:1.6rem;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.seccion {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.btn {
+    display: inline-block;
+    color: black;
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+}
+.btn-primary {
+    background-color: violet;
+}
+.btn-secundary {
+    background-color: rgb(182, 20, 182);
+    color: white;
+}
+.d-block{
+    display: block;
+}
+/**UTILIADES**/
+.txt-center {
+    text-align: center;
+}
+.fw-bold {
+    font-weight: bold;
+}
+.fw-300 {
+    font-weight: 300;
+}
+/** HEADER **/
+
+.site-header {
+    display: block;
+    justify-content: center;
+    background-color: violet;
+    text-align: center;
+}
+@media (min-width:768px) {
+    .site-header {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+ 
+.logotipo {
+    width: 8rem;
+    height: 8rem;
+   
+}
+.logotipo h3 {
+    margin-left: 1rem;
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@media (min-width:768px) {
+    .logotipo {
+        border-bottom: 1rem;
+        margin-left:2rem;
+    }
+}
+@media (min-width: 768px) {
+    .logotipo img {
+        width: 5rem;
+        height: 5rem;
+    }
+}
+.enlaces {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1rem;
+}
+.enlaces a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 2rem 0;
+    
+}
+
+@media (min-width: 768px) {
+    .enlaces  {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 2rem;
+    }
+    .enlaces a{
+        margin: 1rem 2rem;
+    
+    }
+}
+ /**  INFORMACION HEADER  **/
+
+.info-header {
+    position: relative;
+    color: white;
+    min-height: 90vh;
+    text-align: center;
+    background-image: url('img/hero.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+.info-header:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.info-hero {
+    position: relative;
+    padding: 2rem;  
+    top: 15rem;
+    margin-top: 20rem 0;
+}
+.info-hero h2 {
+    width: 95%;
+    font-size: 2.2rem;
+    
+}
+.info-hero p {
+  
+    font-size: 1.8rem;
+}
+
+/** BIENVENIDA **/
+.container-bienvenida {
+    margin: 10rem auto;
+}
+.container-bienvenida span {
+    color: violet;
+}
+.container-bienvenida p {
+    padding: 1rem;
+    font-size: 1.6rem;
+}
+/**SERVICIOS**/
+.contenedor-masajes {
+    display: block;
+    justify-content: space-between;
+}
+@media (min-width:768px) {
+    .contenedor-masajes {
+        display: flex;
+    }
+}
+.masaje {
+    flex-basis: calc(33.3% - 1rem);
+    margin: 1rem;
+    text-align: center;
+    background-color: rgb(226, 226, 226);
+    border: 1px solid rgb(190, 190, 190);
+}
+.masaje:hover {
+    box-shadow: 0px 0px 7px 0px rgba(238,138,238,0.75);
+}
+.contenido-masaje {
+    padding: 2rem;
+}
+.masaje img {
+    height: 20rem;
+}
+.ver-todos {
+    display: flex;
+    justify-content: center;
+}
+@media (min-width:768px) {
+    .ver-todos {
+        justify-content: flex-end;
+    }
+}
+
+
+.mini-galeria, 
+.imagenes{
+    display: grid;
+}
+.imagenes img {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    transition: all 0.2s ease-out;
+}
+.imagenes img:hover {
+    padding: 0.5rem;
+}
+@media (min-width:768px) {
+    .mini-galeria, 
+    .imagenes{
+        grid-template-columns: repeat(4,50%);
+    }
+}
+
+
+footer {
+    margin-top: 10rem;
+    background-color: black;
+    color: white;
+    background-color: rgb(22, 22, 22);
+}
+footer .enlaces {
+    display: flex;
+    
+    justify-content: space-evenly;
+}
+@media (min-width:768px) {  
+    footer .enlaces {
+        justify-content: center;
+    }
+
+}
+.redes {
+    flex-basis: calc(33.3% - 1rem);
+    color: white;
+    text-align: center;
+}
+.redes i {
+    font-size: 4rem;
+    margin: 2rem 1rem;
+}
+.redes h3 {
+    margin-top: 0;
+}
+.copyrigth {
+    background-color: black;
+}
+.copyrigth p {
+    margin: 0;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+
+/** NOSOTROS **/
+@media (min-width:768px) {
+.info-nosotros {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+}
+.info-nosotros img {
+    width: 30rem;
+    height: 30rem;
+}
+.info-nosotros p {
+    padding: 5rem;
+    line-height: 2;
+    font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+    .equipo {
+        margin: 0 auto;
+    }
+    .equipo, 
+    .imagenes {
+        grid-template-columns: repeat(4,50%);
+    } 
+}
+
+/** GALERIA **/
+@media (min-width:768px)
+{
+    .galeria {
+    display: block;
+    }
+    .galeria .imagenes {
+    grid-template-columns: repeat(4,25%);
+    }   
+}
+
+/** servicio    */
+
+.info-servicio {
+    display: flex;
+    justify-content: space-between;
+}
+.info-servicio img {
+    width: 200rem;
+}
+.info-servicio p {
+    font-size: 1.8rem;
+    padding: 2rem;
+}
+/** contactanos **/
+.form {
+    padding: 1rem;
+}
+label {
+    display: blocsk;
+    font-size: 1.8rem;
+    color: gray;
+}
+.form input, textarea {
+    border: 1px solid gray;
+    padding: 1rem;
+    display: block;
+    width: 100%;
+    background-color: #e1e1e1;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem; 
+    color: gray;
+}
+.form button{
+    border: none;
+    justify-content: flex-end;
+}
